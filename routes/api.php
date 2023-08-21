@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::prefix('/v1')->group(function () {
 
-    Route::get('/test-api', [ApiController::class, 'projectsList']);
+    Route::get('/projectsApi', [ApiController::class, 'projectsList']);
 });
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
