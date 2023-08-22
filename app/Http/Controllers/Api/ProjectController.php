@@ -6,8 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Project;
 use Illuminate\Http\Request;
 
-
-class ApiController extends Controller
+class ProjectController extends Controller
 {
     public function projectsList()
     {
