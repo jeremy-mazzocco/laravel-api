@@ -4,10 +4,10 @@ use App\Http\Controllers\Api\ProjectController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-
 Route::prefix('/v1')->group(function () {
 
-    Route::get('/projectsList', [ProjectController::class, 'projectsList']);
+    Route::get('/projects-list', [ProjectController::class, 'projectsList']);
+    Route::get('/projects-page', [ProjectController::class, 'projectIndexPage']);
 });
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
