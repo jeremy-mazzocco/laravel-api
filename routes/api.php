@@ -8,6 +8,7 @@ Route::prefix('/v1')->group(function () {
 
     Route::get('/projects-list', [ProjectController::class, 'projectsList']);
     Route::get('/projects-page', [ProjectController::class, 'projectIndexPage']);
+    Route::get('/project/{id}', [ProjectController::class, 'projectShow']);
 });
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
